@@ -57,7 +57,7 @@ def get_stock_info():
                 have_not_found_name = True #Prevent multiple print of the same item
                 for index in range(len(name_values)):
                     if "RTX" in name_values[index] and have_not_found_name:
-                        test = telegram_bot_sendtext("Item: " + name_values[index] + " | Link: " + urls[index] + " | Price: " + str(price_values[index]) + " | In Stock: " + str(search_quiry[index] in str(product)))
+                        test = telegram_bot_sendtext("Item: " + name_values[index] + " | Link: " + urls[i] + " | Price: " + str(price_values[index]) + " | In Stock: " + str(search_quiry[index] in str(product)))
                         # print(name_values[index])
                         # print(price_values[index])
                         have_not_found_name = False
